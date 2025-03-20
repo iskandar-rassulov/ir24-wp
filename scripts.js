@@ -4,3 +4,4 @@ document.querySelector('.tile-download').addEventListener('click', function() {
     link.download = 'cv.pdf';
     link.click();
 });
+
