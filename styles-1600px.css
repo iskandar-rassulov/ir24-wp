@@ -1,4 +1,11 @@
 @media (min-width: 1600px) and (max-width: 1919px){
+
+    body {
+        width: 100%;
+        background-color: #F1F1F1;
+        overflow-x: hidden;
+    }
+
     #information {
         display: flex;
         justify-content: center; /* Центрирование по горизонтали */
@@ -7,7 +14,6 @@
         width: 95vw; /* Настрой ширину по необходимости */
     }
     
-
     .tile-name{
         background-color: #333;
         width: 11vw;

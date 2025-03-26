@@ -1,6 +1,11 @@
 /*MOBILE ADAPTATION I GUESS*/
 @media (max-width: 600px) {
-
+    body {
+        width: 100%;
+        background-color: #F1F1F1;
+        overflow-x: hidden;
+    }
+    
     #information {
         padding: 2vh;
         display: flex;
