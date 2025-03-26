@@ -1,4 +1,12 @@
-@media (max-width: 1601px){
+@media (min-width: 1600px) and (max-width: 1919px){
+    #information {
+        display: flex;
+        justify-content: center; /* Центрирование по горизонтали */
+        align-items: center; /* Центрирование по вертикали (опционально) */
+        height: 30vh; /* Настрой высоту по необходимости */
+        width: 95vw; /* Настрой ширину по необходимости */
+    }
+    
 
     .tile-name{
         background-color: #333;
@@ -107,7 +115,7 @@
     }
 
     .university img {
-        width: 2.3  vw;
+        width: 2.3vw;
         height: 4vh;
         margin-right: 1vh;
         border-radius: 10px;
@@ -119,7 +127,7 @@
         justify-content: center; /* Центрирование по горизонтали */
         align-items: center; /* Центрирование по вертикали (опционально) */
         height: 30vh; /* Настрой высоту по необходимости */
-        width: 99vw; /* Настрой ширину по необходимости */
+        width: 95vw; /* Настрой ширину по необходимости */
     }
 
     .tile-project {
