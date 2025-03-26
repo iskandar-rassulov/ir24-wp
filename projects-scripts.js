@@ -87,6 +87,7 @@ function createProjectTile(project) {
     techIcon.alt = "Tech Icon";
 
     const githubButton = document.createElement('a');
+    githubButton.className = 'github-button'; // Добавляем класс для стилизации
     githubButton.href = project.githubLink;
     githubButton.target = "_blank";
     const githubImage = document.createElement('img');
@@ -95,6 +96,7 @@ function createProjectTile(project) {
     githubButton.appendChild(githubImage);
 
     const viewButton = document.createElement('a');
+    viewButton.className = 'view-button'; // Добавляем класс для стилизации
     viewButton.href = project.viewLink;
     viewButton.target = "_blank";
     const viewImage = document.createElement('img');

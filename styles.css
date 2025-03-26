@@ -1,4 +1,5 @@
 body {
+    width: 100%;
     background-color: #F1F1F1;
     overflow-x: hidden;
 }
@@ -164,19 +165,6 @@ hr {
     padding: 0;
 }
 
-@media only screen and (max-width:550px){
-    .info-container{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "tile-name" "tile-image"
-        "tile-position" "tile-image"
-        "tile-links" "tile-links"
-        "tile-about" "tile-download"
-        "tile-education" "tile-education";
-    }
-}
-
 /*PROJECTS*/
 .tile-project {
     background-color: white;
@@ -231,10 +219,25 @@ hr {
     width: 3vh; /* Сохраняет пропорции изображения */
 }
 
-.project-buttons a img:hover {
-    /*Поменять иконку на ховер*/
+.github-button img {
+    height: 3vh;
+    width: 3vh;
+    transition: filter 0.2s ease; /* Плавный переход для фильтра */
 }
 
+.github-button:hover img {
+    filter: invert(60%);
+}
+
+.view-button img {
+    height: 3vh;
+    width: 3vh;
+    transition: filter 0.3s ease; /* Плавный переход для фильтра */
+}
+
+.view-button:hover img {
+    filter: brightness(1.2); /* Увеличиваем яркость на 20% */
+}
 
 .tech-icon{
     height: 3.5vh;
@@ -243,12 +246,11 @@ hr {
     object-fit: cover;
 }
 
-
 #projects {
     display: flex;
     justify-content: center; /* Центрирование по горизонтали */
     align-items: center; /* Центрирование по вертикали (опционально) */
-    height: 25vh; /* Настрой высоту по необходимости */
+    height: 30vh; /* Настрой высоту по необходимости */
     width: 100vw; /* Настрой ширину по необходимости */
 }
 
@@ -258,4 +260,45 @@ hr {
     width: 40vw;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2vh;
+}
+
+/*MOBILE ADAPTATION I GUESS*/
+@media (max-width: 600px) {
+    
+
+
+/*PROJECT ADAPTATION*/
+    .tile-project {
+        background-color: white;
+        width: 60vw; /* Ширина */
+        height: 40vh; /* Высота */
+        border-radius: 20px; /* Закругленные углы */
+        position: relative; /* Необходимо для позиционирования вложенного элемента */
+    }
+
+    .tile-project-image {
+        width: 60vw;
+        height: 16vh;
+        border-radius: 20px 20px 0 0; /* Закругленные углы только сверху */
+        object-fit: cover;
+        display: block;
+    }
+    
+    #projects {
+        display: flex;
+        justify-content: center; /* Центрирование по горизонтали */
+        align-items: center; /* Центрирование по вертикали (опционально) */
+        height: 30vh; /* Настрой высоту по необходимости */
+        width: 100vw; /* Настрой ширину по необходимости */
+    }
+
+    .project-container{
+        display: grid;
+        height: 25vh;
+        width: 60vw;
+        grid-template-columns: 1fr;
+        grid-gap: 2vh;
+    }
+    
+
 }
