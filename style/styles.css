@@ -1,6 +1,6 @@
 body {
     width: 100%;
-    background-color: #F1F1F1;
+    background-color: #f3f3f3;
     overflow-x: hidden;
 }
 
@@ -54,7 +54,7 @@ body {
 }
 
 .tile-image{
-    background-image: url('images/avatar.jpg');
+    background-image: url('../images/avatar.jpg');
     background-size: cover;
     width: 10vw;
     height: 20vh;
